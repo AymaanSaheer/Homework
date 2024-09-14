@@ -23,4 +23,4 @@ def voter(age):
 voter(18)   
 voter(13)    
 voter(28)    
-voter(-2)    
+voter(-1)    

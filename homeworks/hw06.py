@@ -6,16 +6,27 @@ Step 3: Now create an User defined function name, "todaysTemperature" where the 
 Step 4: If the temperature is less than 32, then print "Freezing"
 Step 5: If the temperature is less than 55, then print "Pleasant"
 Step 6: If the temperature is less than 73, then print "Getting Warmer"
-Step 7: If the temperature is greater than 101, then print "Very Hot"
-Step 8: And finally print "Please put a valid temperature" where no condition present.
-Step 9: In the above 5 conditions, use the appropriate keyword like if, elif, else to execute today's Temperature condition.
-Step 10: Now Call the function with the parameter and Run the code. Type today's temperature in the Termial, and find the correct condition of the today's weather.
-Step 11: Please organize the code.
-Step 12: Copy the code and paste it below.
+Step 7: If the temperature is less than 101, then print "Hot"
+Step 8: If the temperature is greater than or equal to 101, print "Very Hot"
+Step 9: And finally print "Please put a valid temperature" where no condition present.
+Step 10: In the above 5 conditions, use the appropriate keyword like if, elif, else to execute today's Temperature condition.
+Step 11: Now Call the function with the parameter and Run the code. Type today's temperature in the Termial, and find the correct condition of the today's weather.
+Step 12: Please organize the code.
+Step 13: Copy the code and paste it below.
 '''
-temperature = input("Today's temperature")
+temperature = int(input("Today's Temperature: "))
 
-if temperature <32:
-    print( "Freezing")
-elif temperature <55:
-    print( "Pleasant")
+if temperature < 32:
+    print("Freezing")
+elif temperature < 55:
+    print("Pleasant")
+elif temperature < 73:
+    print("Getting Warmer")
+elif temperature < 101:
+    print("Hot")
+elif temperature >= 101:
+    print("Very Hot")
+else:
+    print("Please put a valid temperature")
+     
+todaysTemperature(temperature)
